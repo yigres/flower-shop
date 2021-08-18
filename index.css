@@ -19,6 +19,16 @@ h1 {
   display: flex;
 }
 
-.reviews >div {
+.reviews > div {
   display: flex;
+}
+
+.contacts {
+  background-image: url(./files/map.png);
+}
+
+.contacts div {
+  background: white;
+  width: 30%;
+  height: 80%;
 }
