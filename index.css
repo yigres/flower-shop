@@ -1,9 +1,4 @@
 
-.authors-bouquets img{
-  width: 25%;
-  /* height: 25%; */
-}
-
 .advantages {
   display: flex;
 }
@@ -11,6 +6,18 @@
 .catalog-sections {
   display: flex;
 }
+
+/* .wedding-bouquets {
+  background-image: url(./files/wedding-bouquets.png);
+}
+
+.bouquets-with-peonies {
+  background-image: url(./files/bouquets-with-peonies.png);
+}
+
+.choose-bouquet {
+  background-image: url(./files/choose-bouquet.png);
+} */
 
 .four-steps > div {
   display: flex;
