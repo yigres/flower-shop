@@ -14,3 +14,7 @@ h1 {
 .catalog-sections {
   display: flex;
 }
+
+.four-steps > div {
+  display: flex;
+}
