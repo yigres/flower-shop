@@ -6,3 +6,11 @@ h1 {
   width: 25%;
   /* height: 25%; */
 }
+
+.advantages {
+  display: flex;
+}
+
+.catalog-sections {
+  display: flex;
+}
