@@ -18,3 +18,7 @@ h1 {
 .four-steps > div {
   display: flex;
 }
+
+.reviews >div {
+  display: flex;
+}
