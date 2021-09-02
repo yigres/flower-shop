@@ -52,11 +52,11 @@
         Смотреть каталог
       </a>
       <ul class="gallery list-reset">
-        <li class="">
-          <img src="./images/tulips.jpg" alt="image of tulips" class="" width="400" height="400">
+        <li class="gallery__item">
+          <img class="gallery__img" src="./images/tulips.jpg" alt="image of tulips" width="400" height="400">
         </li>
-        <li class="">
-          <img src="./images/roses.jpg" alt="image of roses" class="" width="400" height="400">
+        <li class="gallery__item">
+          <img class="gallery__img" src="./images/roses.jpg" alt="image of roses" class="" width="400" height="400">
         </li>
       </ul>
 
@@ -191,44 +191,52 @@
       </ul>
       
       <ul class="gallery list-reset">
-        <li class="gallery-item">
-          <img src="./images/pink-roses.jpg" alt="pink roses" width="200" height="200">
+        <li class="gallery__item">
+          <img class="gallery__img" src="./images/carnations.jpg" alt="carnations" width="387" height="460">
         </li>
-        <li class="gallery-item">
-          <img src="./images/carnations.jpg" alt="carnations" width="200" height="200">
+        <li class="gallery__item">
+          <img class="gallery__img" src="./images/pink-roses.jpg" alt="pink roses" width="285" height="220">
         </li>
-        <li class="gallery-item">
-          <img src="./images/bouquet.jpg" alt="bouquet" width="200" height="200">
+        <li class="gallery__item">
+          <img class="gallery__img" src="./images/bouquet.jpg" alt="bouquet" width="285" height="220">
         </li>
       </ul>
     </section>
 
     <section class="reviews">
-      <h2>Отзывы</h2>
-      <blockquote>
-        <p>
-          Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!
-        </p>
-        <cite>
-          Марина
-        </cite>
-      </blockquote>
-      <blockquote>
-        <p>
-          Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!
-        </p>
-        <cite>
-          Марина
-        </cite>
-      </blockquote>
-      <blockquote>
-        <p>
-          Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!
-        </p>
-        <cite>
-          Марина
-        </cite>
-      </blockquote>
+      <h2 class="title">Отзывы</h2>
+      <ul class="reviews__list list-reset">
+        <li class="reviews__item">
+          <blockquote>
+            <p class="reviews__text">
+              Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!
+            </p>
+            <cite class="reviews__author">
+              Марина
+            </cite>
+          </blockquote>
+        </li>
+        <li class="reviews__item">
+          <blockquote>
+            <p class="reviews__text">
+              Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!
+            </p>
+            <cite class="reviews__author">
+              Татьяна
+            </cite>
+          </blockquote>
+        </li>
+        <li class="reviews__item">
+          <blockquote>
+            <p class="reviews__text">
+              Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!
+            </p>
+            <cite class="reviews__author">
+              Ольга
+            </cite>
+          </blockquote>
+        </li>
+      </ul>
     </section>
 
     <section class="contacts">
