@@ -1,43 +1,69 @@
-.advantages {
-  display: flex;
+* {
+  color: #ae7c78;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.catalog-sections {
-  display: flex;
+.title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
 }
 
-/* .wedding-bouquets {
-  background-image: url(./files/wedding-bouquets.png);
+.intro .title,
+.discount .title {
+  font-size: 44px;
+  letter-spacing: 0;
 }
 
-.bouquets-with-peonies {
-  background-image: url(./files/bouquets-with-peonies.png);
+.intro__text {
+  font-size: 24px;
 }
 
-.choose-bouquet {
-  background-image: url(./files/choose-bouquet.png);
-} */
-
-.four-steps > div {
-  display: flex;
+.discount .title {
+  letter-spacing: 2%;
 }
 
-.reviews > div {
-  display: flex;
+.intro .title .title--mark {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  font-weight: 400;
+  font-style: italic;
 }
 
-.contacts {
-  background-image: url(./files/map.png);
+.popular .title,
+.catalog .title,
+.steps .title,
+.news .title,
+.reviews .title,
+.contacts .title {
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 2%;
 }
 
-.contacts div {
-  background: white;
-  width: 30%;
-  height: 80%;
+.advantages-list__title,
+.slider__title,
+.slider__price,
+.list__title,
+.reviews__author,
+.contacts__text {
+  font-weight: 500;
+}
+
+.contacts__item .title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
