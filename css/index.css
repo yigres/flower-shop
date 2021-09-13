@@ -218,3 +218,29 @@ a .logo {
 .catalog .choose-bouquet {
   background: url('/images/choose-bouquet.jpg') no-repeat;
 }
+
+.discount {
+  margin: 80px auto;
+  width: 1200px;
+  height: 391px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.discount h2 {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  margin-left: 102px;
+}
+
+.discount p {
+  margin-left: 102px;
+  font-size: 24px;
+  width: 387px;
+  height: 145px;
+}
+
+.discount img {
+  align-self: flex-end;
+}
