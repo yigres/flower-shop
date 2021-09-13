@@ -1,14 +1,18 @@
 :root {
-  --primary-color: #ae7c78;
+  --primary: 174, 124, 128;
+  --primary-color: rgba(var(--primary), 1);
   --secondary-color: #fff;
   --button-color: #d89999;
   --text-size: 16px;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 * {
   margin: 0;
-  /* padding: 0; */
-
+  padding: 0;
   color: var(--primary-color);
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -22,6 +26,7 @@
 
 body {
   background: #e5e5e5;
+  width: 1440px;
 }
 
 .invert {
@@ -29,7 +34,7 @@ body {
   background: var(--primary-color);
 }
 
-ul {
+.list-reset {
   list-style: none;
 }
 
@@ -125,6 +130,10 @@ a .logo {
   border: none;
 }
 
+.slider__btn:hover {
+  cursor: pointer;
+}
+
 .slider__btn--prev {
   background: url('/images/arrow-to-left.png') no-repeat 50% 50%;
 }
@@ -160,7 +169,52 @@ a .logo {
   background: url('/images/icons/send-photo-icon.svg') 50% 50% no-repeat;
   background-size: 58.6px 52px;
 }
-/* .gallery__img {
-  width: ;
-  height: ;
-} */
+
+.catalog {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  height: 422px;
+}
+
+.catalog > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog__item:first-child {
+  width: 388px;
+}
+
+.catalog__item:not(:first-child) {
+  margin-left: 19px;
+  width: 387px;
+}
+
+.catalog__link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog__link {
+  background: rgba(var(--primary), 0.6);
+}
+.catalog__link * {
+  color: var(--secondary-color);
+  background: rgba(var(--primary), 0);
+}
+
+.catalog .wedding-bouquets {
+  background: url('/images/wedding-bouquets.jpg') no-repeat;
+}
+
+.catalog .bouquets-with-peonies {
+  background: url('/images/bouquets-with-peonies.jpg') no-repeat;
+}
+
+.catalog .choose-bouquet {
+  background: url('/images/choose-bouquet.jpg') no-repeat;
+}
