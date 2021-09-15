@@ -121,7 +121,6 @@ a {
   border-bottom: 1px solid #ae7c78;
 }
 
-/* 120-102-101-62-62-89-89-120  */
 .nav {
   display: flex;
   width: 100%;
@@ -218,7 +217,7 @@ nav .logo {
 
 .catalog {
   display: flex;
-  margin: 0 auto;
+  margin: 80px auto 0;
   width: 1200px;
   height: 422px;
 }
@@ -266,7 +265,7 @@ nav .logo {
 }
 
 .discount {
-  margin: 80px auto;
+  margin: 80px auto 0;
   width: 1200px;
   height: 391px;
   display: flex;
@@ -295,14 +294,17 @@ nav .logo {
   align-self: flex-end;
 }
 
-.content-container {
+.steps {
+  margin-top: 80px;
+}
+
+.steps .content-container {
   margin: 0 auto;
   width: 1200px;
   height: 232px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 2px solid black; */
 }
 
 .steps .title {
@@ -326,7 +328,6 @@ nav .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 2px solid black; */
 }
 
 .steps-list .list__item * {
@@ -336,7 +337,6 @@ nav .logo {
 .steps-list .list__text {
   width: 285px;
   text-align: center;
-  /* border: 2px solid red; */
 }
 
 .steps-list .list__item:nth-child(1)::before {
@@ -353,4 +353,68 @@ nav .logo {
 
 .steps-list .list__item:nth-child(4)::before {
   content: url(/images/icons/delivery-icon.svg);
+}
+
+.news {
+  margin-top: 80px;
+}
+
+.news .content-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.news__block {
+  width: 508px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.news__block .title {
+  margin-top: 70px;
+}
+
+.news__block .news__text {
+  margin-top: 40px;
+  width: 387px;
+  height: 87px;
+  font-size: 24px;
+}
+
+.news__block .social-networks {
+  margin-top: 40px;
+  width: 96.76px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-networks__item:nth-child(1) {
+  content: url('/images/icons/instagram-icon.svg');
+}
+
+.social-networks__item:nth-child(2) {
+  content: url('/images/icons/facebook-icon.svg');
+}
+
+.social-networks__item:nth-child(3) {
+  content: url('/images/icons/twitter-icon.svg');
+}
+
+.news__images {
+  height: 460px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.news__images .gallery__img:nth-child(2) {
+  margin-top: 20px;
+}
+
+.news__images .gallery__img:nth-child(3) {
+  margin-left: 20px;
 }
