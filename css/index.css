@@ -159,6 +159,39 @@ a {
   margin-left: 89px;
 }
 
+.intro {
+  padding-top: 82px;
+  padding-bottom: 31px;
+}
+
+.intro__block {
+  max-width: 384px;
+  margin-right: 23px;
+}
+
+.intro .title {
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.intro__text {
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.intro .content-container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 10px;
+  display: flex;
+}
+
+.gallery__img:nth-of-type(1) {
+  margin-right: 20px;
+  margin-top: 60px;
+}
+
 .button {
   display: inline-block;
   min-width: 285px;
