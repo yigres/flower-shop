@@ -15,7 +15,7 @@
   padding: 0;
   color: var(--primary-color);
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 400;
   font-size: var(--text-size);
   box-sizing: border-box;
@@ -460,4 +460,38 @@ nav .logo {
 
 .contacts {
   margin-top: 80px;
+  height: 644.1px;
+  background-image: url('/images/map.jpg');
+  background-size: cover;
+  padding-top: 52px;
+}
+.contacts .content-container {
+  margin-left: 222px;
+  width: 386px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 35px;
+  border-radius: 12px;
+  background-color: #f7fafc;
+}
+.contacts__list {
+  flex-grow: 1;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.contacts .content-container * {
+  background-color: rgba(var(--secondary-color), 0);
+}
+.contacts__item {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contacts__link {
+  font-weight: 500;
 }
