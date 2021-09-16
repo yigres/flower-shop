@@ -15,7 +15,6 @@
   padding: 0;
   color: var(--primary-color);
   font-family: 'Montserrat', sans-serif;
-  /* font-style: normal; */
   font-weight: 400;
   font-size: var(--text-size);
   box-sizing: border-box;
@@ -158,7 +157,13 @@ a {
 .header .nav__item:nth-child(6) {
   margin-left: 89px;
 }
-
+/* ***************** */
+.content-container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 10px;
+}
+/* ***************** */
 .intro {
   padding-top: 82px;
   padding-bottom: 31px;
@@ -181,13 +186,18 @@ a {
 }
 
 .intro .content-container {
-  margin: 0 auto;
+  /* margin: 0 auto;
   width: 1200px;
-  padding: 0 10px;
+  padding: 0 10px; */
   display: flex;
 }
 
-.gallery__img:nth-of-type(1) {
+img {
+  /* max-width: 100%;
+  height: auto; */
+}
+
+.intro .gallery__img:nth-of-type(1) {
   margin-right: 20px;
   margin-top: 60px;
 }
@@ -395,36 +405,33 @@ a {
 
 .news .content-container {
   display: flex;
-  margin: 0 auto;
-  width: 1200px;
 }
 
 .news__block {
-  width: 508px;
   display: flex;
   flex-direction: column;
+  max-width: 487px;
+  padding-top: 69px;
+  margin-right: 20px;
 }
 
 .news__block .title {
-  margin-top: 70px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .news__block .news__text {
-  margin-top: 40px;
-  width: 387px;
-  height: 87px;
   font-size: 24px;
+  margin-bottom: 40px;
+  max-width: 387px;
 }
 
 .social-networks {
-  width: 96.76px;
-  height: 20px;
   display: flex;
-  justify-content: space-between;
 }
 
-.news__block .social-networks {
-  margin-top: 40px;
+.social-networks__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .social-networks__item:nth-child(1) {
@@ -440,19 +447,20 @@ a {
 }
 
 .news__images {
-  height: 460px;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 285px 387px;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
 }
 
 .news__images .gallery__img:nth-child(2) {
-  margin-top: 20px;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
 .news__images .gallery__img:nth-child(3) {
-  margin-left: 20px;
+  grid-column: 2/3;
+  grid-row: 1/3;
 }
 
 .reviews {
@@ -460,8 +468,6 @@ a {
 }
 
 .reviews .content-container {
-  margin: 0 auto;
-  width: 1200px;
   height: 308px;
   border: 1px solid #ae7c78;
 }
