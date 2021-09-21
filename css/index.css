@@ -279,55 +279,64 @@ a:active {
 
 /* Стили для type */
 
-.catalog {
-  display: flex;
-  margin: 80px auto 0;
-  width: 1200px;
-  height: 422px;
+.type {
+  margin-bottom: 80px;
 }
 
-.catalog > ul {
-  display: flex;
-  flex-direction: row;
+.type-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  grid-template-rows: 442px;
+  padding: 0;
 }
 
-.catalog__item:first-child {
-  width: 388px;
+.type-item {
+  border-radius: 10px;
 }
 
-.catalog__item:not(:first-child) {
-  margin-left: 19px;
-  width: 387px;
-}
-
-.catalog__link {
-  display: flex;
+.type-link {
   height: 100%;
+  width: 100%;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background: rgba(174, 124, 120, 0.6);
+  background-size: cover;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.catalog__link {
-  background: rgba(var(--primary), 0.6);
+.type-link:hover {
+  opacity: 1;
+  background: rgba(174, 124, 120, 0.8);
 }
 
-.catalog__link * {
-  color: var(--secondary-color);
-  background: rgba(var(--primary), 0);
+.type-link:active {
+  opacity: 1;
+  background: rgba(174, 124, 120, 1);
 }
 
-.catalog .wedding-bouquets {
-  background: url('/images/wedding-bouquets.jpg') no-repeat;
+.type-heading {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
-.catalog .bouquets-with-peonies {
-  background: url('/images/bouquets-with-peonies.jpg') no-repeat;
+.type-text {
+  color: #ffffff;
+  margin: 0;
 }
 
-.catalog .choose-bouquet {
-  background: url('/images/choose-bouquet.jpg') no-repeat;
-}
+/* Стили для sale */
 
 .discount {
   margin: 80px auto 0;
