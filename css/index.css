@@ -1,3 +1,5 @@
+/* Общие стили */
+
 body {
   min-width: 1220px;
   font-size: 16px;
@@ -69,6 +71,8 @@ a:active {
   margin: 0 auto;
   width: 794px;
 }
+
+/* Стили для header */
 
 .page-header {
   margin-top: 25px;
@@ -145,38 +149,42 @@ a:active {
   margin-top: 60px;
 }
 
+/* Стили для advantages */
+
 .advantages {
   margin-bottom: 80px;
 }
 
 .advantages-list {
-  margin: 1em 0;
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 4%;
+  padding: 0;
 }
 
-.advantages-list__item {
+.advantages-item {
   display: flex;
   align-items: flex-start;
 }
-.advantages-list__image {
+
+.advantages-image {
   margin-right: 20px;
 }
 
-.advantages-list__title {
+.advantages-heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0;
   margin-bottom: 8px;
 }
 
-/* .button {
-  display: inline-block;
-  min-width: 285px;
-  padding: 30px;
-  text-align: center;
-  color: var(--secondary-color);
-  border-radius: 40px;
-  background: var(--button-color);
-} */
+.advantages-text {
+  margin: 0;
+}
+
+/* Стили для popular */
 
 .slider__btn {
   width: 60px;
