@@ -338,35 +338,39 @@ a:active {
 
 /* Стили для sale */
 
-.discount {
-  margin: 80px auto 0;
-  width: 1200px;
-  height: 391px;
+.sale {
+  margin-bottom: 80px;
+}
+
+.sale-block {
+  background: #ae7c78;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
-.discount .title {
-  letter-spacing: 2%;
+.sale-text-block {
+  padding: 40px 22px 64px 102px;
 }
 
-.discount h2 {
-  margin-top: 40px;
+.sale-heading {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 59px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-top: 0;
   margin-bottom: 24px;
-  margin-left: 102px;
 }
 
-.discount p {
-  margin-left: 102px;
+.sale-text {
   font-size: 24px;
-  width: 387px;
-  height: 145px;
+  line-height: 29px;
+  color: #ffffff;
+  margin: 0;
+  max-width: 387px;
 }
 
-.discount img {
-  align-self: flex-end;
-}
+/* Стили для steps */
 
 .steps {
   margin-top: 80px;
