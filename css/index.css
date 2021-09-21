@@ -1,109 +1,107 @@
-:root {
-  --primary: 174, 124, 128;
-  --primary-color: rgba(var(--primary), 1);
-  --secondary-color: #fff;
-  --button-color: #d89999;
-  --text-size: 16px;
-}
-
-.visually-hidden {
-  display: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  color: var(--primary-color);
-  font-family: 'Montserrat', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: var(--text-size);
-  /* box-sizing: border-box; */
-  background: var(--secondary-color);
-}
+/* Общие стили */
 
 body {
-  background: #e5e5e5;
-  width: 1440px;
-  display: flex;
-  flex-direction: column;
-}
-
-.invert {
-  color: var(--secondary-color);
-  background: var(--primary-color);
-}
-
-.list-reset {
-  list-style: none;
-}
-
-header,
-main,
-footer {
-  background: var(--secondary-color);
-  width: 1440px;
-}
-
-.title {
-  font-family: 'Playfair Display', 'Times New Roman', serif;
-  font-weight: 400;
-}
-
-.intro .title,
-.discount .title {
-  font-size: 44px;
-  letter-spacing: 0;
-}
-
-.intro__text {
-  font-size: 24px;
-}
-
-.intro .title .title--mark {
-  font-family: 'Playfair Display', serif;
-  font-size: 44px;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.popular .title,
-.catalog .title,
-.steps .title,
-.news .title,
-.reviews .title,
-.contacts .title {
-  font-weight: bold;
-  font-size: 36px;
-  letter-spacing: 2%;
-}
-
-.advantages-list__title,
-.slider__title,
-.slider__price,
-.list__title,
-.reviews__author,
-.contacts__text {
-  font-weight: 500;
-}
-
-.contacts__item .title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  min-width: 1220px;
   font-size: 16px;
+  line-height: 20px;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: normal;
+  color: #ae7c78;
+  background: #ffffff;
 }
 
-.list-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-  display: inline-block;
+  color: #ae7c78;
   text-decoration: none;
-  color: inherit;
 }
 
+a:hover {
+  opacity: 0.7;
+}
+
+a:focus,
+a:active {
+  opacity: 0.2;
+}
+
+.button {
+  background: #d89999;
+  border-radius: 40px;
+  color: #ffffff;
+  padding: 30px 70px;
+  display: inline-block;
+  vertical-align: middle;
+  appearance: none;
+  border: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.5;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 10px;
+}
+
+.content-container-small {
+  margin: 0 auto;
+  width: 794px;
+}
+
+/* Стили для header */
+
+.page-header {
+  margin-top: 25px;
+  padding: 22px 0 21px;
+  border-top: 1px solid #ae7c78;
+  border-bottom: 1px solid #ae7c78;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item:nth-child(6n + 3) {
+  margin-right: 97px;
+}
+/*     */
 .header {
   margin-top: 26px;
   outline: 26px solid var(--secondary-color);
