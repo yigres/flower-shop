@@ -185,31 +185,12 @@ a:active {
 }
 
 /* Стили для popular */
-
-.slider__btn {
-  width: 60px;
-  height: 30px;
-  border: none;
-}
-
-.slider__btn:hover {
-  cursor: pointer;
-}
-
-/* .slider__btn--prev {
-  background: url('/images/arrow-to-left.png') no-repeat 50% 50%;
-}
-
-.slider__btn--next {
-  background: url('/images/arrow-to-right.png') no-repeat 50% 50%;
-} */
-
 .popular {
   margin-bottom: 69px;
 }
 
 .popular-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
@@ -295,6 +276,8 @@ a:active {
 .popular-slider-button.previous {
   margin-right: 20px;
 }
+
+/* Стили для type */
 
 .catalog {
   display: flex;
