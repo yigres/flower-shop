@@ -1,5 +1,3 @@
-/* Общие стили */
-
 body {
   min-width: 1220px;
   font-size: 16px;
@@ -72,8 +70,6 @@ a:active {
   width: 794px;
 }
 
-/* Стили для header */
-
 .page-header {
   margin-top: 25px;
   padding: 22px 0 21px;
@@ -101,101 +97,50 @@ a:active {
 .list-item:nth-child(6n + 3) {
   margin-right: 97px;
 }
-/*     */
-.header {
-  margin-top: 26px;
-  outline: 26px solid var(--secondary-color);
-}
 
-.header nav {
-  width: 1440px;
-  height: 64px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+/* Стили для promo */
 
-  border-top: 1px solid #ae7c78;
-  border-bottom: 1px solid #ae7c78;
-}
-
-.header .nav {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-}
-
-.header nav .logo {
-  width: 100px;
-  height: 32.28px;
-  position: absolute;
-  left: 670px;
-}
-
-.header .nav__item {
-  text-align: center;
-}
-
-.header .nav__item:nth-child(1) {
-  margin-left: 120px;
-}
-
-.header .nav__item:nth-child(2) {
-  margin-left: 102px;
-}
-
-.header .nav__item:nth-child(3) {
-  margin-left: 101px;
-}
-
-.header .nav__item:nth-child(4) {
-  margin-left: 224px;
-}
-
-.header .nav__item:nth-child(5),
-.header .nav__item:nth-child(6) {
-  margin-left: 89px;
-}
-/* ***************** */
-.content-container {
-  margin: 0 auto;
-  width: 1200px;
-  padding: 0 10px;
-}
-
-.content-container-small {
-  margin: 0 auto;
-  width: 794px;
-}
-/* ***************** */
-.intro {
+.promo {
   padding-top: 82px;
   padding-bottom: 31px;
 }
 
-.intro__block {
-  box-sizing: content-box;
+.promo .content-container {
+  display: flex;
+}
+
+.promo-block {
   max-width: 384px;
   margin-right: 23px;
 }
 
-.intro .title {
-  box-sizing: content-box;
-
-  line-height: normal;
+.promo-heading {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-size: 44px;
+  line-height: 59px;
   margin-top: 0;
   margin-bottom: 24px;
+  font-weight: 400;
 }
 
-.intro__text {
+.promo-heading span {
+  font-style: italic;
+}
+
+.promo-text {
+  font-size: 24px;
+  line-height: 29px;
   margin-top: 0;
   margin-bottom: 64px;
 }
 
-.intro .content-container {
-  display: flex;
+.promo-image {
+  border-radius: 10px;
+  display: block;
+  height: 100%;
 }
 
-.intro .gallery__img:nth-of-type(1) {
+.promo-image:nth-of-type(1) {
   margin-right: 20px;
   margin-top: 60px;
 }
@@ -223,7 +168,7 @@ a:active {
   margin-bottom: 8px;
 }
 
-.button {
+/* .button {
   display: inline-block;
   min-width: 285px;
   padding: 30px;
@@ -231,7 +176,7 @@ a:active {
   color: var(--secondary-color);
   border-radius: 40px;
   background: var(--button-color);
-}
+} */
 
 .slider__btn {
   width: 60px;
