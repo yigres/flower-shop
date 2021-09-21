@@ -594,39 +594,54 @@ a:active {
 
 /* Стили для page-footer */
 
-.footer {
-  height: 97px;
-  background-color: rgba(var(--primary), 1);
+.page-footer {
+  background: #ae7c78;
+  color: #ffffff;
+  padding: 21px 0 38px;
+}
+
+.page-footer .content-container {
+  display: flex;
+}
+
+.page-footer .logo {
+  position: static;
+  transform: none;
+  margin-left: 5px;
+  margin-right: 103px;
+}
+
+.footer-nav {
   display: flex;
   align-items: center;
 }
 
-.footer nav {
-  margin-left: 125px;
-  flex-grow: 1;
+.footer-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  margin-right: 19px;
+}
+
+.footer-nav-item {
+  margin-right: 68px;
+}
+
+.footer-nav-link {
+  color: #ffffff;
+}
+
+.page-footer .social-list {
+  margin-left: auto;
   align-items: center;
-  background-color: rgba(var(--primary), 1);
 }
 
-.footer .nav {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-evenly;
+.page-footer .social-item {
+  margin-right: 17px;
 }
 
-.social-networks__item.invert:nth-child(1) {
-  content: url('/images/icons/instagram_invert.svg');
-}
-
-.social-networks__item.invert:nth-child(2) {
-  content: url('/images/icons/facebook_invert.svg');
-}
-
-.social-networks__item.invert:nth-child(3) {
-  content: url('/images/icons/twitter_invert.svg');
-}
-
-.footer .social-networks {
-  margin-right: 125px;
+.page-footer .social-item:last-child {
+  margin-right: 0;
 }
