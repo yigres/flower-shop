@@ -490,42 +490,50 @@ a:active {
 /* Стили для reviews */
 
 .reviews {
-  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .reviews .content-container {
-  height: 308px;
   border: 1px solid #ae7c78;
+  padding: 40px 44px 64px;
+  box-sizing: border-box;
 }
 
-.reviews .title {
-  margin-top: 40px;
+.reviews-heading {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 0;
   margin-bottom: 40px;
-  height: 48px;
+}
+
+.reviews-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 106px;
+}
+
+.reviews-item {
   text-align: center;
 }
 
-.reviews__list {
-  display: flex;
-  height: 178px;
-}
-
-.reviews__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.reviews__item * {
-  text-align: center;
-}
-
-.reviews__text {
-  width: 300px;
-  height: 80px;
+.reviews-item blockquote {
+  margin: 0;
   margin-bottom: 16px;
 }
+
+.reviews-item cite {
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Стили для map */
 
 .contacts {
   margin-top: 80px;
